@@ -1,14 +1,3 @@
-module TristateBufer
-	(input logic	i_In,
-	input logic		i_Enable,
-	output tri				tri_Out);
-
-
-	assign tri_Out = i_Enable ?	i_In : 1'bz;
-
-endmodule
-
-
 module I2C_Master
 	#(parameter	DataWidth	= 8,
 				BuferSize	= 64)
